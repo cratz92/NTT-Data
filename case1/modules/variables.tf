@@ -37,3 +37,38 @@ variable "list_secret_permissions" {
 variable "data_factory_name" {
   type = string
 }
+
+variable "sql_server_name" {
+  type = string
+}
+
+variable "sql_server_version" {
+  type = string
+}
+
+variable "sql_server_admin_user" {
+	type = string
+	sensitive = true
+}
+
+variable "sql_server_admin_password" {
+	type = string
+	sensitive = true
+}
+
+variable "azuread_admin" {
+	type = string
+	sensitive = true
+}
+
+variable "sql_database_name" {
+	type = string
+}
+
+variable "sql_db_collation" {
+	type = string
+}
+
+variable "sql_db_account_type" {
+	type = string
+}

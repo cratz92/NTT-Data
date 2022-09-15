@@ -20,3 +20,13 @@ list_secret_permissions = [
 		]
 
 data_factory_name = "nonprd-polaris-df-northeurope"
+
+sql_server_name = "nonprd-polaris-sql-northeurope"
+sql_server_version = "12.0"
+sql_server_admin_user = ""
+sql_server_admin_password = ""
+azuread_admin = ""
+
+sql_database_name = "nonprod-polaris-staging-db"
+sql_db_collation = "SQL_Latin1_General_CP1_CI_AS"
+sql_db_account_type = "Local"

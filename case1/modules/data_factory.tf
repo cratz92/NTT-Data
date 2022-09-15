@@ -1,6 +1,6 @@
 module "data_factory" {
 	source = "./../templates/data_factory"
-    name = "nonprd-polaris-df-northeurope"
-	resource_group_name = var.resource_group_name
-	resource_group_location = var.resource_group_location
+    data_name = "nonprd-polaris-df-northeurope"
+	location_factory = var.resource_group_location
+    resource_group_name = var.resource_group_name
 }

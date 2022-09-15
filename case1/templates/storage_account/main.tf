@@ -5,5 +5,5 @@ resource "azurerm_storage_account" "sa" {
   account_tier = var.storage_account_tier
   account_replication_type = var.storage_account_replication_type
 
-  tags = local.common_tags
+  tags = var.common_tags
 }

@@ -1,9 +1,9 @@
 variable "resource_group_name" {
-	type = string
+  type = string
 }
 
 variable "resource_group_location" {
-	type = string
+  type = string
 }
 
 variable "storage_account_name" {
@@ -31,7 +31,7 @@ variable "key_vault_sku" {
 }
 
 variable "list_secret_permissions" {
-  type = list
+  type = list(any)
 }
 
 variable "data_factory_name" {
@@ -47,28 +47,32 @@ variable "sql_server_version" {
 }
 
 variable "sql_server_admin_user" {
-	type = string
-	sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "sql_server_admin_password" {
-	type = string
-	sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "azuread_admin" {
-	type = string
-	sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "sql_database_name" {
-	type = string
+  type = string
 }
 
 variable "sql_db_collation" {
-	type = string
+  type = string
 }
 
 variable "sql_db_account_type" {
-	type = string
+  type = string
+}
+
+variable "name" {
+  type = string
 }

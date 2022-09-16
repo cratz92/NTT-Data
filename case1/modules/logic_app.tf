@@ -6,9 +6,11 @@ module "logic_app_module" {
   source                  = "./../templates/logic_app"
   logic_app_name          = var.logic_app_name
   resource_group_location = var.resource_group_location
-  resource_group_name     = var.resource_group_name
+  resource_group_name     = module.resource_group_module.rg_name
   app_service_plan_name   = var.app_service_plan_name
   storage_account_name    = var.storage_account_name
+  storage_account_key     = module.storage_account_module.acces_key
   app_service_plan_tier   = var.app_service_plan_tier
   app_service_plan_size   = var.app_service_plan_size
+
 }

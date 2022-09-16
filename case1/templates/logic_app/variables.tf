@@ -18,6 +18,10 @@ variable "storage_account_name" {
   type = string
 }
 
+variable "storage_account_key" {
+  type = string
+}
+
 variable "app_service_plan_tier" {
   type = string
 }

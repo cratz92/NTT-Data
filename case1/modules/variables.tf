@@ -73,6 +73,18 @@ variable "sql_db_account_type" {
   type = string
 }
 
-variable "name" {
+variable "logic_app_name" {
+  type = string
+}
+
+variable "app_service_plan_name" {
+  type = string
+}
+
+variable "app_service_plan_tier" {
+  type = string
+}
+
+variable "app_service_plan_size" {
   type = string
 }

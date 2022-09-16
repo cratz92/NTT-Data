@@ -30,3 +30,8 @@ azuread_admin             = ""
 sql_database_name   = "nonprod-polaris-staging-db"
 sql_db_collation    = "SQL_Latin1_General_CP1_CI_AS"
 sql_db_account_type = "Local"
+
+logic_app_name          = "nonprod-polaris-la-northeurope"
+app_service_plan_name   = "nonprod-polaris-as-plan-ne"
+app_service_plan_tier   = "Standard"
+app_service_plan_size   = "S1"

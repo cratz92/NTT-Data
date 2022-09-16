@@ -1,7 +1,7 @@
-output "out_storage_account" {
+output "out_logic_app" {
 	value = {}
 
 	depends_on = [
-		azurerm_storage_account.sa
+		azurerm_logic_app_standard.logic_app
 	]
-}  
+}

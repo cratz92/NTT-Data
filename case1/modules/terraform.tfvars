@@ -34,7 +34,6 @@ sql_database_name   = "nonprod-polaris-staging-db1992022"
 sql_db_collation    = "SQL_Latin1_General_CP1_CI_AS"
 sql_db_account_type = "Local"
 
-<<<<<<< HEAD
 
 logic_app_name          = "nonprod-polaris-la-northeurope1992022"
 app_service_plan_name   = "nonprod-polaris-as-plan-ne1992022"
@@ -44,15 +43,3 @@ app_service_plan_sku_name   = "WS1"
 linked_name             = "linked_keyvault"
 secret_sql              = "secret_example"
 linked_sql              = "linked_keyvault"
-=======
-logic_app_name          = "nonprod-polaris-la-northeurope"
-app_service_plan_name   = "nonprod-polaris-as-plan-ne"
-app_service_plan_tier   = "Standard"
-app_service_plan_size   = "S1"
-
-linked_name             = "linked_keyvault"
-linked_data_factory_id  = var.data_factory_name.id
-linked_key_vault_id     = var.key_vault_name.id
-secret_sql              = "secret_example"
-linked_sql              = "linked_keyvault"
->>>>>>> b7fd99eb438e54d8d393b2d3ca5dbebccf622cf8

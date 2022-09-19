@@ -93,10 +93,6 @@ variable "secret_sql" {
   type = string
 }
 
-variable "app_service_plan_tier" {
-  type = string  
-}
-
 variable "logic_app_name" {
   type = string  
 }

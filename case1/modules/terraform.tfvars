@@ -43,3 +43,4 @@ linked_name             = "linked_keyvault"
 linked_data_factory_id  = var.data_factory_name.id
 linked_key_vault_id     = var.key_vault_name.id
 secret_sql              = "secret_example"
+linked_sql              = "linked_keyvault"

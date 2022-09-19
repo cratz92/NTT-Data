@@ -88,3 +88,35 @@ variable "linked_key_vault_id" {
 variable "secret_sql" {
   type = string
 }
+
+variable "app_service_plan_size" {
+  type = string  
+}
+
+variable "app_service_plan_tier" {
+  type = string  
+}
+
+variable "app_service_plan_name" {
+  type = string  
+}
+
+variable "logic_app_name" {
+  type = string  
+}
+
+variable "storage_container_access_type" {
+  type = string   
+}
+
+variable "storage_account_blob_type" {
+  type = string   
+}
+
+variable "linked_sql" {
+  type = string   
+}
+
+variable "storage_account_container_name" {
+   type = string  
+}

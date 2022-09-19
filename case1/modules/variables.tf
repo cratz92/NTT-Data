@@ -77,6 +77,7 @@ variable "linked_name" {
   type = string
 }
 
+<<<<<<< HEAD
 
 variable "app_service_plan_name" {
   type = string  
@@ -92,14 +93,43 @@ variable "app_service_plan_sku_name" {
 
 variable "secret_sql" {
   type = string
+=======
+variable "linked_data_factory_id" {
+  type = string
 }
 
-variable "storage_account_container_name" {
+variable "linked_key_vault_id" {
   type = string
+}
+
+variable "secret_sql" {
+  type = string
+}
+
+variable "app_service_plan_size" {
+  type = string  
+>>>>>>> b7fd99eb438e54d8d393b2d3ca5dbebccf622cf8
+}
+
+variable "app_service_plan_tier" {
+  type = string  
+}
+
+variable "app_service_plan_name" {
+  type = string  
 }
 
 variable "logic_app_name" {
+  type = string  
+}
+
+<<<<<<< HEAD
+variable "logic_app_name" {
   type = string
+=======
+variable "storage_container_access_type" {
+  type = string   
+>>>>>>> b7fd99eb438e54d8d393b2d3ca5dbebccf622cf8
 }
 
 variable "storage_container_access_type" {
@@ -114,3 +144,9 @@ variable "linked_sql" {
   type = string   
 }
 
+<<<<<<< HEAD
+=======
+variable "storage_account_container_name" {
+   type = string  
+}
+>>>>>>> b7fd99eb438e54d8d393b2d3ca5dbebccf622cf8

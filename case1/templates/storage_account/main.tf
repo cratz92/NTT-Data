@@ -14,18 +14,20 @@ resource "azurerm_storage_container" "sa_container" {
   container_access_type = var.storage_container_access_type
 }
 
-resource "azurerm_storage_blob" "tamopsblobs" {
+resource "azurerm_storage_blob" "example" {
 
   # fileset -> enumerates a set of regular file names given a path and pattern. 
   # The path is automatically removed from the resulting set of file names and 
   # any result still containing path separators always returns forward slash (/) 
   # as the path separator for cross-system compatibility.
 
-  for_each = fileset(path.module, "./../files/*")
+  # for_each = fileset(path.module, "./../files/*")
  
-  name                   = trim(each.key, "./../files/")
+  # name                   = trim(each.key, "./../files/")
+  name = "blank.txt"
   storage_account_name   = azurerm_storage_account.sa.name
   storage_container_name = azurerm_storage_container.sa_container.name
   type                   = var.storage_account_blob_type
-  source                 = each.key
+  # source                 = each.key
+  source = "C:/Users/cbritole/OneDrive - NTT DATA EMEAL/Documentos/teste-final-case1/case1/files/blank.txt"
 }

@@ -73,30 +73,18 @@ variable "sql_db_account_type" {
   type = string
 }
 
-variable "logic_app_name" {
+variable "linked_name" {
   type = string
 }
 
-variable "app_service_plan_name" {
+variable "linked_data_factory_id" {
   type = string
 }
 
-variable "app_service_plan_tier" {
+variable "linked_key_vault_id" {
   type = string
 }
 
-variable "app_service_plan_size" {
-  type = string
-}
-
-variable "storage_account_container_name" {
-  type = string
-}
-
-variable "storage_container_access_type" {
-  type = string
-}
-
-variable "storage_account_blob_type" {
+variable "secret_sql" {
   type = string
 }

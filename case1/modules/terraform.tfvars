@@ -38,3 +38,8 @@ logic_app_name          = "nonprod-polaris-la-northeurope"
 app_service_plan_name   = "nonprod-polaris-as-plan-ne"
 app_service_plan_tier   = "Standard"
 app_service_plan_size   = "S1"
+
+linked_name             = "linked_keyvault"
+linked_data_factory_id  = var.data_factory_name.id
+linked_key_vault_id     = var.key_vault_name.id
+secret_sql              = "secret_example"

@@ -7,5 +7,5 @@ output "out_sa" {
 }
 
 output "acces_key" {
-	value = azuremrm_storage_account.sa.access_key
+	value = "azuremrm_storage_account.sa.access_key"
 }

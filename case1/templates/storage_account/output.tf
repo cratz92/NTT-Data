@@ -6,6 +6,6 @@ output "out_sa" {
 	]
 }
 
-output "acces_key" {
-	value = azuremrm_storage_account.sa.access_key
+output "access_key" {
+	value = azurerm_storage_account.sa.primary_access_key
 }

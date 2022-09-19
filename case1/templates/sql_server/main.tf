@@ -7,10 +7,10 @@ resource "azurerm_mssql_server" "sql_server" {
 	administrator_login = var.sql_server_admin_user
 	administrator_login_password = var.sql_server_admin_password
 
-	azuread_administrator {
-		login_username = var.azuread_admin
-		object_id = data.azurerm_client_config.current.object_id
-	}
+	# azuread_administrator {
+	# 	login_username = var.azuread_admin
+	# 	object_id = data.azurerm_client_config.current.object_id
+	# }
 
 	# verify connection to azure services
 }

@@ -22,10 +22,10 @@ variable "storage_account_key" {
   type = string
 }
 
-variable "app_service_plan_tier" {
+variable "app_service_plan_os_type" {
   type = string
 }
 
-variable "app_service_plan_size" {
+variable "app_service_plan_sku_name" {
   type = string
 }

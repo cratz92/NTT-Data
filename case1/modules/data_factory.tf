@@ -11,4 +11,5 @@ module "data_factory_module" {
   linked_name             = var.linked_name
   secret_sql              = var.secret_sql
   linked_sql              = var.linked_sql
+  key_vault_name          = var.key_vault_name
 }

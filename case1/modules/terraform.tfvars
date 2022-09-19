@@ -26,9 +26,9 @@ data_factory_name = "nonprd-polaris-df-northeurope"
 
 sql_server_name           = "nonprd-polaris-sql-northeurope"
 sql_server_version        = "12.0"
-sql_server_admin_user     = ""
-sql_server_admin_password = ""
-azuread_admin             = ""
+sql_server_admin_user     = "Adm1nistr4t@r"
+sql_server_admin_password = "1234567890CarlosLeal#"
+azuread_admin             = "upsk14198640@iscte-iul.pt"
 
 sql_database_name   = "nonprod-polaris-staging-db"
 sql_db_collation    = "SQL_Latin1_General_CP1_CI_AS"

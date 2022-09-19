@@ -21,3 +21,7 @@ variable "secret_sql" {
 variable "linked_sql" {
   type = string
 }
+
+variable "key_vault_name" {
+  type = string
+}

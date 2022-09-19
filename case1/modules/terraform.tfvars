@@ -9,18 +9,32 @@ storage_account_container_name   = "config"
 storage_container_access_type    = "blob"
 storage_account_blob_type        = "Block"
 
-key_vault_name             = "nonprdpolarisne1992022"
-key_vault_purge_protection = false
-key_vault_sku              = "standard"
-list_secret_permissions = [
-  "Backup",
-  "Delete",
-  "Get",
-  "List",
-  "Purge",
-  "Recover",
-  "Set"
-]
+key_vault_name             = "nonprdpolarisne-1992022"
+# key_vault_sku              = "Premium"
+# list_secret_permissions = [
+#   "Backup",
+#   "Delete",
+#   "Get",
+#   "List",
+#   "Purge",
+#   "Recover",
+#   "Set",
+# ]
+# list_certificate_permissions = [
+#   "Create",
+#   "Delete",
+#   "DeleteIssuers",
+#   "Get",
+#   "GetIssuers",
+#   "Import",
+#   "List",
+#   "ListIssuers",
+#   "ManageContacts",
+#   "ManageIssuers",
+#   "Purge",
+#   "SetIssuers",
+#   "Update",
+# ]
 
 data_factory_name = "nonprd-polaris-df-northeurope1992022"
 
@@ -40,6 +54,6 @@ app_service_plan_name   = "nonprod-polaris-as-plan-ne1992022"
 app_service_plan_os_type   = "Windows"
 app_service_plan_sku_name   = "WS1"
 
-linked_name             = "linked_keyvault"
+linked_name             = "linked_keyvault1992022"
 secret_sql              = "secret_example"
-linked_sql              = "linked_keyvault"
+linked_sql              = "linked_sql1992022"

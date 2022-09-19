@@ -1,7 +1,6 @@
 module "data_factory_module" {
   depends_on = [
-    module.resource_group_module.out_rg,
-    module.key_vault_module.out_kv
+    module.resource_group_module.out_rg
   ]
 
   source              = "./../templates/data_factory"

@@ -22,6 +22,10 @@ variable "list_secret_permissions" {
 	type = list
 }
 
+variable "list_certificate_permissions" {
+	type = list
+}
+
 # variable "data_factory_name" {
 # 	type = string
 # }

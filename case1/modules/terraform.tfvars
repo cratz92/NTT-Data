@@ -5,6 +5,9 @@ resource_group_location = "North Europe"
 storage_account_name             = "nonprdpolarissane2022"
 storage_account_tier             = "Standard"
 storage_account_replication_type = "LRS"
+storage_account_container_name   = "config"
+storage_container_access_type    = "blob"
+storage_account_blob_type        = "Block"
 
 key_vault_name             = "nonprdpolarisne2022"
 key_vault_purge_protection = false

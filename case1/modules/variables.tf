@@ -97,16 +97,8 @@ variable "app_service_plan_tier" {
   type = string  
 }
 
-variable "app_service_plan_name" {
-  type = string  
-}
-
 variable "logic_app_name" {
   type = string  
-}
-
-variable "storage_container_access_type" {
-  type = string   
 }
 
 variable "storage_container_access_type" {

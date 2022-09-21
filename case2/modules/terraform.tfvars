@@ -9,4 +9,7 @@ data_key_vault = "false"
 
 service_plan_name = "nonprodfunsp2192022"
 
-
+# vnet configurations
+dns = ["8.8.8.8", "8.8.4.4"]
+address = "10.100.8.0/16"
+subnet_range = "10.100.9.0/24"

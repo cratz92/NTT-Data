@@ -31,5 +31,17 @@ variable "service_plan_name" {
 }
 
 #####  VIRTUAL NETWORK #####
+variable "dns" {
+  type = string
+}
+
+variable "address" {
+  type = string
+}
+
+variable "subnet_range" {
+  type = string
+}
+
 #####  SERVICE BUS #####
 #####  APPLICATION INSIGHTS #####

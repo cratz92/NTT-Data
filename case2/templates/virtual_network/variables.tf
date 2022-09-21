@@ -33,8 +33,3 @@ variable "resource_group_name" {
 variable "resource_group_location" {
 	type = string
 }
-
-#address["10.100.8.0/16"]
-#dns ["8.8.8.8", "8.8.4.4"]
-
-#subnet range "10.100.9.0/24"

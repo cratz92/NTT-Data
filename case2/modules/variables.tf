@@ -15,6 +15,15 @@ variable "storage_account_name" {
 }
 
 #####  KEY VAULT #####
+
+variable "key_vault_name" {
+	type = string
+}
+
+variable "data_key_vault" {
+	type = string
+}
+
 #####  FUNCTION APP #####
 
 variable "service_plan_name" {

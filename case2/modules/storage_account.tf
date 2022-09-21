@@ -1,6 +1,6 @@
 module "storage_account_module" {
 	depends_on = [
-		module.resource_group_module.rg
+		module.resource_group_module.out_rg
 	]
 	
 	source = "./../templates/storage_account"

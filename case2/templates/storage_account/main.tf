@@ -4,4 +4,6 @@ resource "azurerm_storage_account" "sa" {
 	location = var.resource_group_location
 	account_tier = var.storage_account_tier
 	account_replication_type = var.storage_account_replication_type
+
+	tags = var.common_tags
 }

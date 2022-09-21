@@ -29,6 +29,14 @@ modules
 
 >>>>>  RENOMEAR variaveis  <<<<<<<
 
-< resource_name > + _ + < atributo > 
+< resource_name > + "_" + < atributo > 
 
 e.g.  variável para o name dentro do resource group ficaria ---> "resource_group_name"
+
+
+
+>>>>   RENOMEAR MODULES   <<<<<
+
+< resource_name > + "_module"
+
+e.g. module correspondente ao resource group ficaria ---->  "resource_group_module"

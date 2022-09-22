@@ -6,16 +6,12 @@ variable "vnet_name" {
   type = string
 }
 
-variable "rgname" {
-  type = string
-}
-
 variable "dns" {
-  type = string
+  type = list
 }
 
 variable "address" {
-  type = string
+  type = list
 }
 
 variable "sub_name" {
@@ -26,9 +22,11 @@ variable "subnet_range" {
   type = string
 }
 
+
 variable "resource_group_name" {
 	type = string
 }
+
 
 variable "resource_group_location" {
 	type = string

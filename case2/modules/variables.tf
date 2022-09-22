@@ -33,16 +33,21 @@ variable "service_plan_name" {
 #####  VIRTUAL NETWORK #####
 
 variable "dns" {
-  type = string
+  type = list
 }
 
 variable "address" {
-  type = string
+  type = list
 }
 
 variable "subnet_range" {
   type = string
 }
+
+variable "subnetname" {
+  type = string
+}
+
 
 #####  SERVICE BUS #####
 
@@ -59,3 +64,5 @@ variable "log_analytics_wspace_name" {
 variable "app_insights_name" {
 	type = string
 }
+
+

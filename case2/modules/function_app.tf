@@ -10,7 +10,7 @@ module "function_app_module" {
 	service_plan_os_type = "Windows"
 	service_plan_sku_name = "F1"
 	#function_app_service_plan_id = data.azurerm_service_plan.service_plan_info.id
-	function_app_name = "Nonprd-fun-fa2192022"
+	function_app_name = var.function_app_name
 	storage_account_name = var.storage_account_name
 	#storage_account_access_key = data.azurerm_storage_account.storage_account_info.primary_access_key
 }

@@ -11,4 +11,9 @@ module "storage_account_module" {
 	storage_account_replication_type = "LRS"
 
 	common_tags = local.common_tags
+
+	storage_container_name = var.storage_container_name
+	storage_container_access_type = "blob"
+	storage_share_name = var.storage_share_name
+	storage_share_quota = "50"
 }

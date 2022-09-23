@@ -14,6 +14,15 @@ variable "storage_account_name" {
 	type = string
 }
 
+variable "storage_container_name" {
+	type = string
+}
+
+variable "storage_share_name" {
+	type = string
+}
+
+
 #####  KEY VAULT #####
 
 variable "key_vault_name" {
@@ -27,6 +36,10 @@ variable "data_key_vault" {
 #####  FUNCTION APP #####
 
 variable "service_plan_name" {
+	type = string
+}
+
+variable "function_app_name" {
 	type = string
 }
 

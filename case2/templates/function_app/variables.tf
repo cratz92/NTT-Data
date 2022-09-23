@@ -33,3 +33,7 @@ variable "storage_account_name" {
 # variable "storage_account_access_key" {
 # 	type = string
 # }
+
+variable "windows_fa_app_key" {
+	type = string
+}

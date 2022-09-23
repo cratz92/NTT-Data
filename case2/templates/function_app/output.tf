@@ -13,3 +13,7 @@ output "out_windows_fa" {
 # 		azurerm_service_plan.sp
 # 	]
 # }
+
+output "fa_host_key" {
+	value = data.azurerm_function_app_host_keys.fa_keys.default_function_key
+}

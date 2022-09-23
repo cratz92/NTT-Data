@@ -12,7 +12,7 @@ module "storage_account_module" {
 
 	common_tags = local.common_tags
 
-	storage_nr_default_action = "Allow"
+	storage_nr_default_action = "Deny"
 	storage_nr_ip_rules = [""]
 	storage_nr_subnet_ids = [module.vnet.subnet_id]
 	storage_nr_bypass = ["Metrics"]
@@ -21,6 +21,6 @@ module "storage_account_module" {
 	storage_container_access_type = "blob"
 
 	storage_share_name = var.storage_share_name
-	storage_share_quota = "50"
+	storage_share_quota = 50
 	
 }

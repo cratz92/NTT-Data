@@ -35,7 +35,7 @@ variable "storage_share_name" {
 }
 
 variable "storage_share_quota" {
-	type = string	
+	type = number	
 }
 
 variable "storage_nr_default_action" {

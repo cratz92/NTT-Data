@@ -15,7 +15,7 @@ variable "log_analytics_wspace_sku" {
 }
 
 variable "log_analytics_wspace_retention" {
-	type = string
+	type = number
 }
 
 variable "app_insights_name" {

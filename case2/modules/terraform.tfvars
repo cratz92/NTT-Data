@@ -26,7 +26,7 @@ app_insights_name = "nonprod-fun-ai2192022"
 # vnet configurations
 subnetname = "subnet_01"
 dns = ["8.8.8.8", "8.8.4.4"]
-address = "10.100.8.0/16"
+address = ["10.100.8.0/28"]
 subnet_range = "10.100.9.0/24"
 
 

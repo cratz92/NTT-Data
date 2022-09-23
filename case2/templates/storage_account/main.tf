@@ -8,6 +8,16 @@ resource "azurerm_storage_account" "sa" {
 	tags = var.common_tags
 }
 
+resource "azurerm_storage_account_network_rules" "sa_network_rules" {
+
+  storage_account_id = azurerm_storage_account.sa.id
+
+  default_action             = var.storage_nr_default_action
+  ip_rules                   = var.storage_nr_ip_rules
+  virtual_network_subnet_ids = var.storage_nr_subnet_ids
+  bypass                     = var.storage_nr_bypass
+}
+
 resource "azurerm_storage_container" "sa_container" {
 	name = var.storage_container_name
 	storage_account_name = var.storage_account_name
@@ -20,3 +30,4 @@ resource "azurerm_storage_share" "sa_share" {
 	quota = var.storage_share_quota
 
 }
+

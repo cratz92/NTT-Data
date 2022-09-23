@@ -5,3 +5,7 @@ output "out_vnet" {
 #		azurerm_resource_group.rg
 #	]
 }
+
+output "subnet_id" {
+	value = azurerm_virtual_network.vnet.subnet
+}

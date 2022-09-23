@@ -37,3 +37,19 @@ variable "storage_share_name" {
 variable "storage_share_quota" {
 	type = string	
 }
+
+variable "storage_nr_default_action" {
+	type = string
+}
+
+variable "storage_nr_ip_rules" {
+	type = list(string)
+}
+
+variable "storage_nr_subnet_ids" {
+	type = list
+}
+
+variable "storage_nr_bypass" {
+	type = list(string)
+}

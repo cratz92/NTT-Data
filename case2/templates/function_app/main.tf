@@ -34,6 +34,6 @@ resource "azurerm_windows_function_app" "windows_fa" {
 		value = data.azurerm_storage_account.storage_account_info.primary_connection_string
 	}
 
-	connection_string = data.azurerm_application_insights.ai_info.connection_string
+	#connection_string = data.azurerm_application_insights.ai_info.connection_string
 
 }

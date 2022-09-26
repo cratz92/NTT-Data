@@ -11,11 +11,11 @@ output "subnet_id" {
 }
 
 output "nsg_info" {
-	value = data.azurerm_network_security_group.nsg_info
+	value = data.azurerm_network_security_group.nsg_info.name
   
 }
 
 output "vnet_info" {
-	value = data.azurerm_virtual_network.vnet_info
+	value = data.azurerm_virtual_network.vnet_info.name
   
 }

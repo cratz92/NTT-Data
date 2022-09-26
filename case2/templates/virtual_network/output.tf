@@ -9,3 +9,13 @@ output "out_vnet" {
 output "subnet_id" {
 	value = azurerm_virtual_network.vnet.subnet
 }
+
+output "nsg_info" {
+	value = data.azurerm_network_security_group.nsg_info
+  
+}
+
+output "vnet_info" {
+	value = data.azurerm_virtual_network.vnet_info
+  
+}

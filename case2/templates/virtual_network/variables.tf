@@ -31,3 +31,19 @@ variable "resource_group_name" {
 variable "resource_group_location" {
 	type = string
 }
+
+variable "dataname_resource" {
+  type = string
+}
+
+variable "dataname_nsg" {
+  type = string
+}
+
+variable "dataname_vnet" {
+  type = string
+}
+
+variable "dataname" {
+  type = string
+}

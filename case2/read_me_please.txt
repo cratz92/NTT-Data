@@ -8,7 +8,7 @@ templates
                 |_main.tf
                 |_variables.tf
                 |_output.tf
-               X|_data.tf
+                |_data.tf
 
 |
 modules
@@ -24,7 +24,9 @@ modules
 * module(s) do respectivo recurso 
 ** similar ao que fazemos com os templates dos recursos mas nos modules
 *** onde definimos os valores das variaveis dos modules
-**** de modo a reduzir quantidade de leituras que fazemos. passamos a ter um ficheiro onde todas as chamadas do tipo "data" são feitas
+**** de modo a reduzir quantidade de leituras que fazemos. passamos a ter um ficheiro onde todas as chamadas do tipo "data" são feitas, 
+porém o uso intercalado do output com o data na pasta do template, permite que possamos aceder ao recurso de outros ficheiros sem termos
+de voltar a realizar uma call do tipo Data
 
 
 >>>>>  RENOMEAR variaveis  <<<<<<<

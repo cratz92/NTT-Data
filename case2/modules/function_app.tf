@@ -14,7 +14,10 @@ module "function_app_module" {
 	#function_app_service_plan_id = data.azurerm_service_plan.service_plan_info.id
 	function_app_name = var.function_app_name
 	storage_account_name = var.storage_account_name
-	#storage_account_access_key = data.azurerm_storage_account.storage_account_info.primary_access_key
+	storage_account_access_key = module.storage_account_module.sa_data.primary_access_key
 
-	windows_fa_app_key = module.application_insights_module.data_out
+	windows_fa_app_instrumentation_key = module.application_insights_module.ai_data.instrumentation_key
+	#windows_fa_app_instrumentation_key = module.application_insights_module.instrumentation_key
+
+	service_bus_connection_string = module.service_bus_module.sb_data.default_primary_connection_string
 }

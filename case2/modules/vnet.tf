@@ -15,4 +15,6 @@ module "vnet" {
     #subnet_vars
     sub_name = var.subnetname
     subnet_range = var.subnet_range
+
+
 }

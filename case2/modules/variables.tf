@@ -30,6 +30,10 @@ variable "service_plan_name" {
 	type = string
 }
 
+variable "function_app_name" {
+  	type = string
+}
+
 #####  VIRTUAL NETWORK #####
 
 variable "dns" {

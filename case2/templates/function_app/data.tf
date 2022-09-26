@@ -1,6 +1,6 @@
-data "azurerm_storage_account" "storage_account_info" {
-	name = var.storage_account_name
-	resource_group_name = var.resource_group_name
+data "azurerm_windows_function_app" "windows_fa_info" {
+	name = azurerm_windows_function_app.windows_fa.name
+	resource_group_name = azurerm_windows_function_app.windows_fa.resource_group_name
 }
 
 data "azurerm_function_app_host_keys" "fa_keys" {
@@ -12,12 +12,3 @@ data "azurerm_function_app_host_keys" "fa_keys" {
 	]
 }
 
-data "azurerm_servicebus_namespace" "sb_info" {
-	name = var.service_bus_name
-	resource_group_name = var.resource_group_name
-}
-
-data "azurerm_application_insights" "ai_info" {
-  name                = var.app_insights_name
-  resource_group_name = var.resource_group_name
-}

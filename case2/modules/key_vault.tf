@@ -15,7 +15,7 @@ module "key_vault_module" {
 
 	kv_acl_bypass = "AzureServices"
 	kv_acl_default_action = "Deny"
-	kv_acl_subnet_ids = [module.vnet.subnet_id]
+	kv_acl_subnet_ids = module.vnet.subnet_ids
 
 	kv_secret_name = "function_app_host_key"
 	kv_secret_value = module.function_app_module.fa_host_key

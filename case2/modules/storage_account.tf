@@ -14,7 +14,7 @@ module "storage_account_module" {
 
 	storage_nr_default_action = "Deny"
 	storage_nr_ip_rules = [""]
-	storage_nr_subnet_ids = [module.vnet.subnet_id]
+	storage_nr_subnet_ids = module.vnet.subnet_ids
 	storage_nr_bypass = ["Metrics"]
 
 	storage_container_name = var.storage_container_name

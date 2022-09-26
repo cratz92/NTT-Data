@@ -22,19 +22,17 @@ variable "function_app_name" {
 	type = string
 }
 
-# variable "function_app_service_plan_id" {
-# 	type = string
-# }
+
 
 variable "storage_account_name" {
 	type = string
 }
 
-# variable "storage_account_access_key" {
-# 	type = string
-# }
+variable "storage_account_access_key" {
+	type = string
+}
 
-variable "windows_fa_app_key" {
+variable "windows_fa_app_instrumentation_key" {
 	type = string
 }
 
@@ -43,5 +41,9 @@ variable "service_bus_name" {
 }
 
 variable "app_insights_name" {
+	type = string
+}
+
+variable "service_bus_connection_string" {
 	type = string
 }

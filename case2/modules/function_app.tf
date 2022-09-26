@@ -16,5 +16,5 @@ module "function_app_module" {
 	storage_account_name = var.storage_account_name
 	#storage_account_access_key = data.azurerm_storage_account.storage_account_info.primary_access_key
 
-	windows_fa_app_key = module.application_insights_module.instrumentation_key
+	windows_fa_app_key = module.application_insights_module.data_out
 }

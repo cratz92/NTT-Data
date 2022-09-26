@@ -37,3 +37,11 @@ variable "storage_account_name" {
 variable "windows_fa_app_key" {
 	type = string
 }
+
+variable "service_bus_name" {
+	type = string
+}
+
+variable "app_insights_name" {
+	type = string
+}

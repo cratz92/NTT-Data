@@ -4,6 +4,8 @@ module "function_app_module" {
 	]
 	
 	source = "./../templates/function_app"
+	app_insights_name = var.app_insights_name
+	service_bus_name = var.service_bus_name
 	service_plan_name = var.service_plan_name
 	resource_group_name = var.resource_group_name
 	resource_group_location = var.resource_group_location

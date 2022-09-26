@@ -6,8 +6,8 @@ output "out_vnet" {
 #	]
 }
 
-output "subnet_id" {
-	value = azurerm_virtual_network.vnet.subnet
+output "subnet_ids" {
+	value = data.azurerm_virtual_network.vnet_info.subnets.*.ids
 }
 
 output "nsg_info" {

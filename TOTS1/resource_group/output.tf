@@ -4,4 +4,9 @@ output "out_rg" {
 	depends_on = [
 		azurerm_resource_group.rg
 	]
+
+}
+
+output "out_resource_group" {
+	value = data.azurerm_resource_group.data_resource
 }

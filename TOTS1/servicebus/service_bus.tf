@@ -1,17 +1,20 @@
-resource "azurerm_servicebus_namespace" "service_bus" {
-  name                = var.servicebus.name
+resource "azurerm_servicebus_namespace" "service_bus"  {
+
+  name                = var.servicebus_name
   location            = module.resource_group_module.out_resource_group.location
   resource_group_name = module.resource_group_module.out_resource_group.name
   sku                 = ""
+  client_name         = var.client_name
+  environment         = var.environment
+  stack               = var.stack
 
-  tags = {
-    source = "terraform"
+  servicebus_namespaces_queues = {
+
+    servicebus1 = {
+      queues = {
+        queue1 = {}
+        queue2 = {}
+      }
+    }
   }
-}
-
-resource "azurerm_servicebus_queue" "example" {
-  name         = "tfex_servicebus_queue"
-  namespace_id = azurerm_servicebus_namespace.example.id
-
-  enable_partitioning = true
 }
